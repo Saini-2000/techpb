@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --primary-color: #0fbebe;
+    --secondary-color: rgba(255, 255, 255, 0.934);
+    --blur-bg: rgba(255, 255, 255, 0.934);
+}
+
+
+
+  .review-item {
+    /* @apply opacity-0 transform translate-y-10 transition-all duration-700; */
+    opacity: 0;
+    transition: all;
+    transition-duration: 900;
+    transform: translateY(10px);
+    animation: fadeInUp 1s forwards;
+  }
+  
+.animate-fadeInUp {
+    animation: fadeInUp 1s forwards;
+  }
+  
+  /* Custom animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
