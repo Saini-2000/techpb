@@ -10,6 +10,9 @@ import ThankYou from '../pages/ThankYou'
 import AboutUs from '../pages/AboutUs'
 import ScrollToTop from './ScrollToTop'
 import NotFound from '../pages/NotFount'
+import ErpnextDetails from '../component/OurService/ErpnextDetails'
+import EcommercePage from '../component/OurService/Ecommerce'
+import DigitalMarketingServices from '../component/OurService/DigitalMarketing'
 
 
 const Routes = () => {
@@ -26,6 +29,11 @@ const Routes = () => {
       <Route path="/work" element={<Work/>}/>
       <Route path="/work/:name" element={<CategoryWork/>}/>
       <Route path="/workItem/:id" element={<WorkItem/>}/>
+      <Route path="/ErpNextDetails" element={<ErpnextDetails/>}/>
+      <Route path="/Ecommerce" element={<EcommercePage/>}/>
+      <Route path="/DigitalMarketing" element={<DigitalMarketingServices />} />
+
+
 
       <Route path="*" element={<NotFound />} />
 

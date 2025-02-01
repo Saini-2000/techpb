@@ -34,10 +34,10 @@ const Footer = () => {
           <h3 className="text-2xl font-semibold text-[var(--primary-color)]">Follow Us</h3>
           <p className="text-gray-400">Stay connected through our social channels:</p>
           <div className="flex space-x-4 text-2xl">
-            <a href="#" className="text-blue-500 hover:text-[var(--primary-color)]"><i className="fab fa-facebook"></i></a>
-            <a href="#" className="text-blue-500 hover:text-[var(--primary-color)]"><i className="fab fa-twitter"></i></a>
-            <a href="#" className="text-blue-500 hover:text-[var(--primary-color)]"><i className="fab fa-instagram"></i></a>
-            <a href="#" className="text-blue-500 hover:text-[var(--primary-color)]"><i className="fab fa-linkedin"></i></a>
+            <a href="#" className="text-black-500 hover:text-[var(--primary-color)]"><i className="fab fa-facebook"></i></a>
+            <a href="#" className="text-black-500 hover:text-[var(--primary-color)]"><i className="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/techpanjab/" className="text-black-900 hover:text-[var(--primary-color)]"><i className="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/tech-panjab/" className="text-black-500 hover:text-[var(--primary-color)]"><i className="fab fa-linkedin"></i></a>
           </div>
         </div>
       </section>
