@@ -10,7 +10,7 @@ const HeroSection = () => {
     <div className="absolute inset-0 z-0">
       <video
         className="object-cover w-full h-full "
-        src="https://videos.pexels.com/video-files/2889410/2889410-hd_1920_1080_30fps.mp4"
+        src="https://cdn.pixabay.com/video/2021/07/12/81188-576082864_large.mp4"
         autoPlay
         muted
         playsInline
@@ -22,9 +22,9 @@ const HeroSection = () => {
       <div className="w-full lg:w-1/2 ">
       <p className="text-white text-lg mb-6">
 LET'S GET TO WORK        </p>
-        <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-[var(--primary-color)] z-10">YOUR HOME ,<br/> OUR PRIORITY</h2>
+        <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-[var(--primary-color)] z-10">YOUR BUSINESS ,<br/> OUR PRIORITY</h2>
         <p className="text-white text-lg mb-6 z-10">
-          Eget mi proin sed libero. Egestas sed sed risus pretium quam vulputate dignissim. Tincidunt vitae semper quis lectus nulla at volutpat diam.
+        Empowering your business with solutions that make it our top priority.
         </p>
         <div className="flex  items-center space-x-4 mb-4">
           {/* <a href="#" className="bg-[var(--primary-color)] text-white px-6 py-3 rounded-full hover:bg-white hover:text-[var(--primary-color)]">
