@@ -16,28 +16,28 @@ const ServicesSection = () => {
         </div>
         <section className="flex justify-evenly text-[var(--primary-color)] flex-col sm:flex-row p-6">
           <div className="w-full sm:w-1/4  h-72 overflow-hidden rounded-xl my-2 hover:scale-110 transform transition-transform duration-300">
-             <a href="" target="_self" className="w-full h-full hover:scale-110 transform transition-transform duration-300 flex items-center justify-center bg-center bg-cover bg-[url('https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
+             <Link to="/ErpNextDetails" target="_self" className="w-full h-full hover:scale-110 transform transition-transform duration-300 flex items-center justify-center bg-center bg-cover bg-[url('https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
                           <div className=" w-full h-full text-3xl flex items-center justify-center bg-[var(--blur-bg)] hover:bg-transparent transform transition-bg duration-500 opacity-100 hover:opacity-0 transform transition-opacity duration-500">
                   <span>ERPNext</span>
               </div>
             
-                </a>
+                </Link>
           </div>
           <div className="w-full sm:w-1/4 h-72 overflow-hidden rounded-xl my-2 hover:scale-110 transform transition-transform duration-300">
-             <a href="" target="_self" className="w-full h-full hover:scale-110 transform transition-transform duration-300  flex items-center justify-center bg-center bg-cover bg-[url('https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
+             <Link to="/Ecommerce" target="_self" className="w-full h-full hover:scale-110 transform transition-transform duration-300  flex items-center justify-center bg-center bg-cover bg-[url('https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
              <div className=" w-full h-full text-3xl flex items-center justify-center bg-[var(--blur-bg)] hover:bg-transparent transform transition-bg duration-500 opacity-100 hover:opacity-0 transform transition-opacity duration-500">
                   <span >E-Commerce</span>
               </div>
             
-                </a>
+                </Link>
           </div>
           <div className="w-full sm:w-1/4 h-72 overflow-hidden rounded-xl my-2 hover:scale-110 transform transition-transform duration-300">
-             <a href="" target="_self" className="w-full h-full hover:scale-110 transform transition-transform duration-300  flex items-center justify-center  bg-center bg-cover bg-[url('https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
+             <Link to="/DigitalMarketing" target="_self" className="w-full h-full hover:scale-110 transform transition-transform duration-300  flex items-center justify-center  bg-center bg-cover bg-[url('https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
              <div className=" w-full h-full text-3xl flex items-center justify-center bg-[var(--blur-bg)] hover:bg-transparent transform transition-bg duration-500 opacity-100 hover:opacity-0 transform transition-opacity duration-500">
                   <span>Digital Marketing</span>
               </div>
             
-                </a>
+                </Link>
           </div>
          
         
