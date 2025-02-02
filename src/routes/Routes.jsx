@@ -12,7 +12,15 @@ import ScrollToTop from './ScrollToTop'
 import NotFound from '../pages/NotFount'
 import ErpnextDetails from '../component/OurService/ErpnextDetails'
 import EcommercePage from '../component/OurService/Ecommerce'
-import DigitalMarketingServices from '../component/OurService/DigitalMarketing'
+import DigitalMarketingServices from '../component/Slider/DigitalMarketing'
+import HRMSDetails from '../component/Slider/hrms'
+import CRMDetails from '../component/Slider/crm'
+import RetailServicesDetails from '../component/Slider/retail'
+import ERPNextHealthcareSolution from '../component/Slider/healthcare'
+import ERPNextManufacturingSolution from '../component/Slider/manufacture'
+import ERPNextBusinessConsultancy from '../component/Slider/BusinessConsultancy'
+import ERPNextEducation from '../component/Slider/Education'
+import POSDetails from '../component/OurService/PointOfSale'
 
 
 const Routes = () => {
@@ -32,7 +40,14 @@ const Routes = () => {
       <Route path="/ErpNextDetails" element={<ErpnextDetails/>}/>
       <Route path="/Ecommerce" element={<EcommercePage/>}/>
       <Route path="/DigitalMarketing" element={<DigitalMarketingServices />} />
-
+      <Route path="/hrms" element={<HRMSDetails />} />
+      <Route path="/crm" element={<CRMDetails />} />
+      <Route path="/retail" element={<RetailServicesDetails/>} />
+      <Route path="/healthcare" element={<ERPNextHealthcareSolution/>} />
+      <Route path="/manufacture" element={<ERPNextManufacturingSolution/>} />
+      <Route path="/BusinessConsultancy" element={<ERPNextBusinessConsultancy/>} />
+      <Route path="/Education" element={<ERPNextEducation/>} />
+      <Route path="/PointOfSale" element={<POSDetails/>} />
 
 
       <Route path="*" element={<NotFound />} />

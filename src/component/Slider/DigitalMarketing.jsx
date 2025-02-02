@@ -4,7 +4,7 @@ import { FaBullhorn, FaChartLine, FaLaptop, FaMobileAlt, FaSearch, FaUsers } fro
 const DigitalMarketingServices = () => {
   return (
     <div className="max-w-7xl mx-auto p-6">
-     <nav className=" text-white ">
+     <nav className=" text-black ">
      </nav>
       <header className="text-center mb-12 mt-32">
         <h1 className="text-4xl font-bold text-[color:var(--primary-color)]">Our Digital Marketing Services</h1>

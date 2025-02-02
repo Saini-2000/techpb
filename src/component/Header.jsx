@@ -48,7 +48,7 @@ const Header = () => {
         onClose={() => setFeedbackModal(false)}
       />
     
-      <section className="bg-#6b728063 absolute w-full z-10 t-10 flex justify-between px-6 pt-2 backdrop-blur-sm">
+      <section className="bg-black absolute w-full z-10 t-10 flex justify-between px-6 pt-2 backdrop-blur-sm">
         <div className="flex justify-start items-center">
           <div className="w-auto text-[var(--primary-color)]">
             <a
