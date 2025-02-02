@@ -72,10 +72,10 @@ const HomeFooter = () => {
                 </div>
                 <p className="text-gray-400 text-lg">Fill out the form, or call us to set up a free in-home consultation.</p>
                 <p className="font-bold text-lg">Service Areas:</p>
-                <p className="text-gray-400">San Francisco, Santa Clara, Alameda, San Mateo</p>
-                <p className="text-gray-400">500 Terry Francine Street San Francisco, CA 94158</p>
-                <p className="text-gray-100"><a href="mailto:info@mysite.com" className="text-blue-500">info@mysite.com</a></p>
-                <p className="text-blue-500">123-456-7890</p>
+                <p className="text-gray-400">Mohali, Punjab</p>
+                <p className="text-gray-400">India</p>
+                <p className="text-gray-100"><a href="techpanjab6@gmail.com" className="text-blue-500">techpanjab6@gmail.com</a></p>
+                <p className="text-blue-500">9816455684</p>
               </div>
             </section>
             <section className="w-full lg:w-1/2 px-4 mb-8 text-[var(--primary-color)]">

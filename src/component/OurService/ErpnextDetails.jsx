@@ -4,10 +4,6 @@ import { FaPuzzlePiece, FaChartLine, FaUsers, FaShoppingCart, FaWarehouse, FaMon
 const ErpnextDetails = () => {
   return (
     <div className="max-w-6xl mx-auto p-6">
-      {/* Navbar with background color */}
-      <nav className=" text-white ">
-      </nav>
-
       <header className="text-center mb-8 mt-32">
         <h1 className="text-4xl font-bold text-[color:var(--primary-color)]">ERPNext: Streamline Your Business</h1>
         <p className="text-color-600">A Modern, Open-Source ERP System</p>

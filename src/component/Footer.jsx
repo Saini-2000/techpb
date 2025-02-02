@@ -10,10 +10,10 @@ const Footer = () => {
         <div className="space-y-5">
          
           <p className="font-bold text-2xl text-[var(--primary-color)]">Service Areas</p>
-          <p className="text-gray-400">San Francisco, Santa Clara, Alameda, San Mateo</p>
-          <p className="text-gray-400">500 Terry Francine Street San Francisco, CA 94158</p>
-          <p className="text-blue-500"><a href="mailto:info@mysite.com">info@mysite.com</a></p>
-          <p className="text-blue-500">123-456-7890</p>
+          <p className="text-gray-400">Mohali, Punjab</p>
+          <p className="text-gray-400">India</p>
+          <p className="text-blue-500"><a href="mailto:techpanjab6@gmail.com">techpanjab6@gmail.com</a></p>
+          <p className="text-blue-500">9816455684</p>
         </div>
       </section>
       
@@ -22,9 +22,9 @@ const Footer = () => {
           <h3 className="text-2xl font-semibold text-[var(--primary-color)]">About Us</h3>
           <p className="text-gray-400">We are committed to delivering top-notch services with attention to detail. Our team is here to bring your vision to life.</p>
           <ul className="space-y-2">
-            <li><a href="#services" className="text-blue-500 hover:underline">Our Services</a></li>
-            <li><a href="#portfolio" className="text-blue-500 hover:underline">Portfolio</a></li>
-            <li><a href="#testimonials" className="text-blue-500 hover:underline">Testimonials</a></li>
+            <li><a href="/services" className="text-blue-500 hover:underline">Our Services</a></li>
+            <li><a href="/about-us" className="text-blue-500 hover:underline">Portfolio</a></li>
+            {/* <li><a href="#testimonials" className="text-blue-500 hover:underline">Testimonials</a></li> */}
           </ul>
         </div>
       </section>

@@ -1,8 +1,8 @@
-import React from "react";
+// import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import handyman from "../../assets/handyman.jpg"
+import { Link } from 'react-router-dom'
 
 const MainCrousal = () => {
   const settings = {
@@ -61,55 +61,52 @@ const MainCrousal = () => {
     <div className="pt-6">
       <div className=" w-11/12 relative m-auto text-[var(--primary-color)]">
         <Slider {...settings}>
-          <div className=" flex justify-center items-center p-8 ">
-          <svg fill={"var(--primary-color)"} height="160px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 455 455" xml:space="preserve">
-<g>
-	<g>
-		<circle cx="125" cy="142.5" r="68.966"/>
-	</g>
-	<g>
-		<circle cx="330" cy="142.5" r="68.966"/>
-	</g>
-	<g>
-		<path d="M140,257.365v84.101h-30v-84.101C48.038,264.776,0,317.507,0,381.466h250C250,317.507,201.962,264.776,140,257.365z"/>
-	</g>
-	<g>
-		<path d="M345,257.365v84.101h-30v-84.104c-25.509,3.052-48.657,13.782-67.065,29.818C268.031,313.321,280,346.019,280,381.466h175
-			C455,317.507,406.962,264.776,345,257.365z"/>
-	</g>
-</g>
-</svg>
+        <Link to="/hrms" className="no-underline">
+          <div className="flex flex-col justify-center items-center p-8 cursor-pointer">
+            <svg
+              fill={"var(--primary-color)"}
+              height="160px"
+              width="200px"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 455 455"
+              xml:space="preserve"
+            >
+              <g>
+                <g>
+                  <circle cx="125" cy="142.5" r="68.966" />
+                </g>
+                <g>
+                  <circle cx="330" cy="142.5" r="68.966" />
+                </g>
+                <g>
+                  <path d="M140,257.365v84.101h-30v-84.101C48.038,264.776,0,317.507,0,381.466h250C250,317.507,201.962,264.776,140,257.365z" />
+                </g>
+                <g>
+                  <path d="M345,257.365v84.101h-30v-84.104c-25.509,3.052-48.657,13.782-67.065,29.818C268.031,313.321,280,346.019,280,381.466h175 C455,317.507,406.962,264.776,345,257.365z" />
+                </g>
+              </g>
+            </svg>
             <p className="text-center">HRMS</p>
           </div>
-          <div className="flex justify-center items-center p-8">
-          {/* <svg
-  className="h-40 mx-auto"
-  id="Layer_1"
-  data-name="Layer 1"
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 52 52"
-  fill="var(--primary-color)"
-  stroke="var(--primary-color)"
->
-  <g>
-    <path d="m44.44 19h-11.24a3.89 3.89 0 0 1 -4.2-3.55 3.53 3.53 0 0 1 0-.65v-11.2a1.58 1.58 0 0 0 -1.56-1.6h-16.64a4.87 4.87 0 0 0 -4.8 4.8v38.4a4.87 4.87 0 0 0 4.8 4.8h30.4a4.87 4.87 0 0 0 4.8-4.8v-24.6a1.58 1.58 0 0 0 -1.56-1.6zm-10.85 20.35a3.92 3.92 0 0 1 -1.08-.1 4.19 4.19 0 0 1 -3.68 2.16 5.24 5.24 0 0 1 -1.83-.41 4.88 4.88 0 0 1 -4.43 2.91 4.72 4.72 0 0 1 -4.57-3.13c-.22 0-.65.11-1 .11a4.49 4.49 0 0 1 -4.54-4.42 4.39 4.39 0 0 1 2.27-3.89 6.33 6.33 0 0 1 -.44-2.06 5.26 5.26 0 0 1 5.19-5.18 5.92 5.92 0 0 1 4.06 2.14 4.79 4.79 0 0 1 3.46-1.42 4.91 4.91 0 0 1 4.21 2.38 7.49 7.49 0 0 1 2.38-.54 5.93 5.93 0 0 1 5.83 5.73 5.85 5.85 0 0 1 -5.83 5.72z"></path>
-    <path d="m36.4 15h8.5a1.2 1.2 0 0 0 1.1-1.2 1.4 1.4 0 0 0 -.3-.9l-10.6-10.6a1.4 1.4 0 0 0 -.9-.3 1.2 1.2 0 0 0 -1.2 1.1v8.5a3.49 3.49 0 0 0 3.4 3.4z"></path>
-  </g>
-</svg> */}
-<svg fill="#000000" className="h-40 mx-auto" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  fill="var(--primary-color)"
-  stroke="var(--primary-color)"
-	 viewBox="0 0 512 512" xml:space="preserve">
-<g>
-	<g>
-		<path d="M478.33,68.409H33.67C15.105,68.409,0,83.514,0,102.079v307.841c0,18.566,15.105,33.67,33.67,33.67h444.66
-			c18.566,0,33.67-15.105,33.67-33.67V102.079C512,83.514,496.895,68.409,478.33,68.409z M119.716,427.557H33.67
-			c-9.725,0-17.637-7.912-17.637-17.637V102.079c0-9.725,7.912-17.637,17.637-17.637h86.046V427.557z M495.967,409.921
-			c0,9.725-7.912,17.637-17.637,17.637h-342.58V84.443h342.58c9.725,0,17.637,7.912,17.637,17.637V409.921z"/>
-	</g>
-</g>
-<g>
-	<g>
+        </Link>
+        <Link to="/crm" className="no-underline">
+        <div className="flex justify-center flex-col items-center p-8">
+        <svg fill="#000000" className="h-40 mx-auto" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  fill="var(--primary-color)"
+          stroke="var(--primary-color)"
+          viewBox="0 0 512 512" xml:space="preserve">
+        <g>
+	      <g>
+        <path d="M478.33,68.409H33.67C15.105,68.409,0,83.514,0,102.079v307.841c0,18.566,15.105,33.67,33.67,33.67h444.66
+          c18.566,0,33.67-15.105,33.67-33.67V102.079C512,83.514,496.895,68.409,478.33,68.409z M119.716,427.557H33.67
+          c-9.725,0-17.637-7.912-17.637-17.637V102.079c0-9.725,7.912-17.637,17.637-17.637h86.046V427.557z M495.967,409.921
+          c0,9.725-7.912,17.637-17.637,17.637h-342.58V84.443h342.58c9.725,0,17.637,7.912,17.637,17.637V409.921z"/>
+        </g>
+      </g>
+      <g>
+        <g>
 		<path d="M196.142,102.614h-34.205c-4.427,0-8.017,3.589-8.017,8.017s3.589,8.017,8.017,8.017h34.205
 			c4.427,0,8.017-3.589,8.017-8.017S200.569,102.614,196.142,102.614z"/>
 	</g>
@@ -215,7 +212,10 @@ const MainCrousal = () => {
 </svg>
             <p className="text-center">CRM</p>
           </div>
-          <div className="flex justify-center items-center p-8">
+          </Link>
+
+          <Link to="/retail" className="no-underline">
+          <div className="flex flex-col justify-center items-center p-8">
           <svg width="200px" height="160px" viewBox="0 0 24 24" fill={"var(--primary-color)"} xmlns="http://www.w3.org/2000/svg">
 <path d="M20.9447 2H3.05529C2.88838 1.99997 2.72644 2.0581 2.59616 2.1648C2.46588 2.27151 2.37503 2.42042 2.33858 2.587L1 7.75C1 8.34674 1.23178 8.91903 1.64437 9.34099C2.05695 9.76295 2.61652 10 3.2 10C3.78348 10 4.34305 9.76295 4.75563 9.34099C5.16821 8.91903 5.4 8.34674 5.4 7.75C5.4 8.34674 5.63179 8.91903 6.04437 9.34099C6.45695 9.76295 7.01652 10 7.6 10C8.18348 10 8.74305 9.76295 9.15563 9.34099C9.56821 8.91903 9.8 8.34674 9.8 7.75C9.8 8.34674 10.0318 8.91903 10.4444 9.34099C10.8569 9.76295 11.4165 10 12 10C12.5835 10 13.1431 9.76295 13.5556 9.34099C13.9682 8.91903 14.2 8.34674 14.2 7.75C14.2 8.34674 14.4318 8.91903 14.8444 9.34099C15.2569 9.76295 15.8165 10 16.4 10C16.9835 10 17.5431 9.76295 17.9556 9.34099C18.3682 8.91903 18.6 8.34674 18.6 7.75C18.6 8.34674 18.8318 8.91903 19.2444 9.34099C19.6569 9.76295 20.2165 10 20.8 10C21.3835 10 21.9431 9.76295 22.3556 9.34099C22.7682 8.91903 23 8.34674 23 7.75L21.6604 2.587C21.6244 2.42041 21.5337 2.27142 21.4036 2.16467C21.2734 2.05793 21.1115 1.99983 20.9447 2Z" stroke={"var(--primary-color)"}  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M2.75 13C2.75 12.5858 2.41421 12.25 2 12.25C1.58579 12.25 1.25 12.5858 1.25 13H2.75ZM22.75 13C22.75 12.5858 22.4142 12.25 22 12.25C21.5858 12.25 21.25 12.5858 21.25 13H22.75ZM1.25 13V20H2.75V13H1.25ZM4 22.75H20V21.25H4V22.75ZM22.75 20V13H21.25V20H22.75ZM20 22.75C21.5188 22.75 22.75 21.5188 22.75 20H21.25C21.25 20.6904 20.6904 21.25 20 21.25V22.75ZM1.25 20C1.25 21.5188 2.48122 22.75 4 22.75V21.25C3.30964 21.25 2.75 20.6904 2.75 20H1.25Z" fill={"var(--primary-color)"} />
@@ -224,15 +224,20 @@ const MainCrousal = () => {
 </svg>
             <p className="text-center">Retail</p>
           </div>
-          <div className="flex justify-center items-center p-8">
+
+          </Link>
+      <Link to="/BusinessConsultancy" className="no-underline">
+          <div className="flex flex-col justify-center items-center p-8">
           <svg width="200px" height="160px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg">
-<path d="M512 569.2m-10 0a10 10 0 1 0 20 0 10 10 0 1 0-20 0Z" fill={"var(--primary-color)"} />
-<path d="M611.8 617.1H406.5L108 390.3v20.1l293 222.7h216l299-223.3v-20L611.8 617.1z" fill={"var(--primary-color)"} />
-<path d="M704 256.8v-94.5H320v94.5H64v605h896v-605H704z m-340-50.5h296v50.4H364v-50.4z m552 611.5H108V769h808v48.8z m0-64.9H108V300.8h808v452.1z" fill={"var(--primary-color)"} />
-</svg>
+          <path d="M512 569.2m-10 0a10 10 0 1 0 20 0 10 10 0 1 0-20 0Z" fill={"var(--primary-color)"} />
+          <path d="M611.8 617.1H406.5L108 390.3v20.1l293 222.7h216l299-223.3v-20L611.8 617.1z" fill={"var(--primary-color)"} />
+          <path d="M704 256.8v-94.5H320v94.5H64v605h896v-605H704z m-340-50.5h296v50.4H364v-50.4z m552 611.5H108V769h808v48.8z m0-64.9H108V300.8h808v452.1z" fill={"var(--primary-color)"} />
+          </svg>
             <p className="text-center">Business Consultancy</p>
           </div>
-          <div className="flex justify-center items-center p-8">
+          </Link>
+        <Link to="/DigitalMarketing" className="no-underline">
+          <div className="flex flex-col justify-center items-center p-8">
           <svg width="200px" height="130px" viewBox="0 0 512.00 512.00" id="Layer_1" version="1.1"  xmlns="http://www.w3.org/2000/svg"  fill={"var(--primary-color)"} stroke={"var(--primary-color)"} transform="rotate(0)" stroke-width="5.12">
 
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
@@ -263,43 +268,37 @@ const MainCrousal = () => {
 </svg>
             <p className="text-center mt-8">Digital Marketing</p>
           </div>
-
-          <div className="flex justify-center items-center p-8">
+</Link>
+      <Link to="/manufacture" className="no-underline">
+          <div className="flex flex-col justify-center items-center p-8">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px" height="160px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" fill={"var(--primary-color)"}>
 
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
 
-<g id="SVGRepo_iconCarrier"> <path d="M4,18v2h4v-2H4 M4,14v2h10v-2H4 M10,18v2h4v-2H10 M16,14v2h4v-2H16 M16,18v2h4v-2H16 M2,22V8l5,4V8l5,4V8l5,4l1-10h3l1,10 v10H2z"/> <rect fill="none" width="24" height="24"/> </g>
+        <g id="SVGRepo_iconCarrier"> <path d="M4,18v2h4v-2H4 M4,14v2h10v-2H4 M10,18v2h4v-2H10 M16,14v2h4v-2H16 M16,18v2h4v-2H16 M2,22V8l5,4V8l5,4V8l5,4l1-10h3l1,10 v10H2z"/> <rect fill="none" width="24" height="24"/> </g>
 
-</svg>
+        </svg>
             <p className="text-center">Manufacturing</p>
           </div>
-          <div className="flex justify-center items-center p-8">
+        </Link>
+           <Link to="/healthcare" className="no-underline">
+          <div className="flex flex-col justify-center items-center p-8">
           <svg className="h-40 mx-auto" fill={"var(--primary-color)"} width="200px" height="160px" viewBox="-2.5 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"><path d="M11.56 10.11v2.046a3.827 3.827 0 1 1-7.655 0v-.45A3.61 3.61 0 0 1 .851 8.141V5.25a1.682 1.682 0 0 1 .763-1.408 1.207 1.207 0 1 1 .48 1.04.571.571 0 0 0-.135.368v2.89a2.5 2.5 0 0 0 5 0V5.25a.57.57 0 0 0-.108-.334 1.208 1.208 0 1 1 .533-1.018 1.681 1.681 0 0 1 .683 1.352v2.89a3.61 3.61 0 0 1-3.054 3.565v.45a2.719 2.719 0 0 0 5.438 0V10.11a2.144 2.144 0 1 1 1.108 0zm.48-2.07a1.035 1.035 0 1 0-1.035 1.035 1.037 1.037 0 0 0 1.036-1.035z"/></svg>
             <p className="text-center">Healthcare</p>
           </div>
-          <div className="flex justify-center items-center p-8">
-            {/* <svg
-              className="h-40 mx-auto"
-              id="Layer_1"
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 250 250"
-            >
-              <title>Artboard 1 copy 7</title>
-              <path
-                fill={"var(--primary-color)"}
-                d="M81.36,135.35a2,2,0,0,1-1.63.85,2,2,0,0,1-1.15-.37l-22.19-15.7a2,2,0,1,1,2.31-3.26l22.19,15.69A2,2,0,0,1,81.36,135.35Zm89.18-.61a2,2,0,0,0,1.15-.36l20.92-14.8a2,2,0,0,0-2.31-3.27l-20.92,14.8a2,2,0,0,0,1.16,3.63Zm31.46-23V124a2,2,0,0,1-.83,1.62L168.92,149a2,2,0,0,1-2.22.09l-1.68-1v2.47a2,2,0,0,1-.83,1.61l-38,27.59a2,2,0,0,1-2.35,0l-38-27.56a2,2,0,0,1-.83-1.62V148.1l-1.68,1a2,2,0,0,1-2.22-.09L48.83,125.63A2,2,0,0,1,48,124V111.79A2,2,0,0,1,49.06,110L86.68,89.92a2,2,0,0,1,2,.06l1.64,1V89.34a2,2,0,0,1,1.06-1.76L124,70.09a2,2,0,0,1,1.89,0l32.69,17.47a2,2,0,0,1,1.06,1.77V91l1.64-1a2,2,0,0,1,2-.06L200.94,110A2,2,0,0,1,202,111.79ZM94.32,93.45l27,16.66a2,2,0,0,1,1,1.7v2.45l1.64-1a2,2,0,0,1,2.1,0l1.68,1v-2.47a2,2,0,0,1,1-1.7l27-16.66V90.52L125,74.12,94.32,90.54ZM85,143.4v-5a2,2,0,0,1,1-1.7l32.36-19.95v-3.79L87.56,94,52,113v10l30.35,22Zm76-3.94L125,117.3,89,139.49v10.08l36,26.11,36-26.13ZM198,113,162.44,94l-30.73,18.94v3.81l32.36,19.9a2,2,0,0,1,1,1.7v5.06l2.63,1.62L198,123Zm-97.94,32.87a2,2,0,1,0-2.31,3.27l26.11,18.43.09.05a2.53,2.53,0,0,0,.37.18l.16.06a2.25,2.25,0,0,0,.52.07h0a2.25,2.25,0,0,0,.52-.07l.16-.06a1.85,1.85,0,0,0,.37-.19l.09,0,26.09-18.45a2,2,0,0,0-2.31-3.27L125,163.48Z"
-              />
-            </svg> */}
+          </Link>
+
+      <Link to="/Education" className="no-underline">
+          <div className="flex flex-col justify-center items-center p-8">
             <svg width="180px" height="160px" viewBox="0 0 48 48" fill={"var(--primary-color)"} id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
             {`
             .st0{fill:var(--primary-color);}`}
           </style><path fill={"var(--primary-color)"} class="st0" d="M41,26.083h-1.192c-0.24-3.863-3.218-6.99-7.017-7.456c1.88-1.135,3.145-3.192,3.145-5.543  c0-3.571-2.906-6.477-6.478-6.477s-6.477,2.906-6.477,6.477c0,2.352,1.264,4.408,3.144,5.543c-3.799,0.466-6.777,3.593-7.017,7.456  H17.5V21c0-0.276-0.224-0.5-0.5-0.5h-2.833v-2c0-0.276-0.224-0.5-0.5-0.5h-2.834v-1.125c0-0.276-0.224-0.5-0.5-0.5H7  c-0.276,0-0.5,0.224-0.5,0.5v9.708v5.167c0,0.276,0.224,0.5,0.5,0.5h2.833v8.917c0,0.276,0.224,0.5,0.5,0.5h27.334  c0.276,0,0.5-0.224,0.5-0.5V32.25H41c0.276,0,0.5-0.224,0.5-0.5v-5.167C41.5,26.307,41.276,26.083,41,26.083z M23.981,13.083  c0-3.02,2.457-5.477,5.477-5.477c3.021,0,5.478,2.457,5.478,5.477s-2.457,5.477-5.478,5.477  C26.438,18.561,23.981,16.104,23.981,13.083z M27.106,19.561h4.704c3.704,0,6.748,2.883,7.005,6.522H20.101  C20.357,22.443,23.401,19.561,27.106,19.561z M10.833,26.083v-5.271h2.334V21v5.083H10.833z M7.5,26.083v-6.958h2.333v6.958H7.5z   M14.167,23.322H16.5v2.761h-2.333V23.322z M16.5,21.5v0.822h-2.333V21.5H16.5z M13.167,19.813h-2.334V19h2.334V19.813z   M9.833,17.375v0.75H7.5v-0.75H9.833z M37.167,40.667H10.833V32.25h26.334V40.667z M40.5,31.25h-2.833H10.333H7.5v-4.167h2.833  h3.334H17h2.583h19.75H40.5V31.25z"/></svg>
             <p className="text-center">Education</p>
           </div>
+          </Link>
         </Slider>
       </div>
     </div>
