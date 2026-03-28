@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap');
+
+html,
+body {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1100px 600px at -10% -15%, rgba(91, 140, 255, 0.26), transparent 62%),
+    radial-gradient(900px 540px at 105% 0%, rgba(124, 92, 255, 0.22), transparent 56%),
+    radial-gradient(800px 460px at 50% 110%, rgba(75, 205, 255, 0.14), transparent 62%),
+    linear-gradient(135deg, #0B0F1A 0%, #1A1F3A 55%, #2A1E5C 100%);
+  background-attachment: fixed;
+}
+
+:focus-visible {
+  outline: 2px solid rgba(91, 140, 255, 0.92);
+  outline-offset: 2px;
+}
