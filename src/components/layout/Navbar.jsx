@@ -80,6 +80,9 @@ export default function Navbar() {
   const location = useLocation()
   const navigate = useNavigate()
 
+  const erpNavActive =
+    location.pathname === '/erp-services' || location.pathname.startsWith('/erp-services/')
+
   useEffect(() => {
     setSession(getSession())
   }, [location.pathname])
@@ -169,6 +172,13 @@ export default function Navbar() {
                 Services
               </NavLink>
               <NavLink
+                to="/erp-services"
+                className={() => `nav-link ${erpNavActive ? 'nav-link-active' : ''}`}
+                onClick={onNavigate}
+              >
+                ERP Services
+              </NavLink>
+              <NavLink
                 to="/contact"
                 className={({ isActive }) => `nav-link ${isActive ? 'nav-link-active' : ''}`}
                 onClick={onNavigate}
@@ -233,6 +243,13 @@ export default function Navbar() {
               onClick={onNavigate}
             >
               Services
+            </NavLink>
+            <NavLink
+              to="/erp-services"
+              className={() => `nav-link ${erpNavActive ? 'nav-link-active' : ''}`}
+              onClick={onNavigate}
+            >
+              ERP Services
             </NavLink>
             <NavLink
               to="/contact"

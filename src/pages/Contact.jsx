@@ -85,6 +85,14 @@ export default function Contact() {
                       <div className="contact-info-text">+91 9816455684</div>
                     </div>
                   </Card>
+
+                  <Card className="glass contact-info-card" padded={false}>
+                    <div className="contact-info-icon">L</div>
+                    <div>
+                      <div className="contact-info-title">Address</div>
+                      <div className="contact-info-text">Una, Himachal Pradesh</div>
+                    </div>
+                  </Card>
                 </div>
               </div>
 

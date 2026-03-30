@@ -24,6 +24,9 @@ export default function Footer() {
               <NavLink to="/services" className="footer-link">
                 Services
               </NavLink>
+              <NavLink to="/erp-services" className="footer-link">
+                ERP Services
+              </NavLink>
               <NavLink to="/contact" className="footer-link">
                 Contact
               </NavLink>
@@ -38,6 +41,9 @@ export default function Footer() {
               <a className="footer-link" href="tel:+919816455684">
                 +919816455684
               </a>
+              <div className="muted" style={{ marginTop: 4, lineHeight: 1.55 }}>
+                Una, Himachal Pradesh
+              </div>
             </div>
           </div>
         </div>

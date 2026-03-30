@@ -1,24 +1,12 @@
 import Button from '../components/ui/Button.jsx'
 import Card from '../components/ui/Card.jsx'
 import ServiceIcon from '../components/icons/ServiceIcon.jsx'
+import { ERP_HOME_FEATURES } from '../constants/erpServices.js'
+import { SERVICES_HOME_HIGHLIGHT } from '../constants/servicesCatalog.js'
 
-const servicesPreview = [
-  {
-    icon: 'code',
-    title: 'Web Development',
-    description: 'Fast, accessible React builds with clean UX and performance budgets.',
-  },
-  {
-    icon: 'cloud',
-    title: 'Cloud & Deploy',
-    description: 'Scalable deployments with reliable CI/CD and environment hardening.',
-  },
-  {
-    icon: 'security',
-    title: 'Security by Design',
-    description: 'Threat modeling, secure patterns, and defense-in-depth for production.',
-  },
-]
+/** Stock video: abstract business / office (Pexels — free to use) */
+const HERO_VIDEO_SRC =
+  'https://videos.pexels.com/video-files/3255275/3255275-hd_1920_1080_25fps.mp4'
 
 const testimonials = [
   {
@@ -44,6 +32,36 @@ const testimonials = [
 export default function Home() {
   return (
     <div>
+      <section className="video-hero" aria-label="Intro">
+        <video
+          className="video-hero-media"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+        >
+          <source src={HERO_VIDEO_SRC} type="video/mp4" />
+        </video>
+        <div className="video-hero-overlay" aria-hidden="true" />
+        <div className="video-hero-inner">
+          <div className="video-hero-kicker">Enterprise resource planning</div>
+          <h1 className="video-hero-title">Streamline Your Business with Smart ERP Solutions</h1>
+          <p className="video-hero-lead">
+            Connect operations, finance, and customer workflows in one place—built for clarity, speed,
+            and growth across teams.
+          </p>
+          <div className="video-hero-actions">
+            <Button to="/contact" variant="primary">
+              Talk to us
+            </Button>
+            <Button to="/services" variant="secondary">
+              Our services
+            </Button>
+          </div>
+        </div>
+      </section>
+
       <section className="hero">
         <div className="container">
           <div className="hero-grid">
@@ -91,10 +109,10 @@ export default function Home() {
                   What we do best
                 </div>
                 <div className="muted" style={{ marginTop: 8, lineHeight: 1.6, fontSize: 14 }}>
-                  Three core capabilities to launch quickly and scale confidently.
+                  Highlighted services—explore the full lineup on our Services page.
                 </div>
                 <div style={{ marginTop: 14, display: 'flex', flexDirection: 'column', gap: 12 }}>
-                  {servicesPreview.map((s) => (
+                  {SERVICES_HOME_HIGHLIGHT.map((s) => (
                     <div
                       key={s.title}
                       className="card"
@@ -116,6 +134,11 @@ export default function Home() {
                       </div>
                     </div>
                   ))}
+                </div>
+                <div style={{ marginTop: 14 }}>
+                  <Button to="/services" variant="secondary" size="sm" className="">
+                    View all services
+                  </Button>
                 </div>
               </div>
               <div style={{ height: 14 }} />
@@ -142,33 +165,47 @@ export default function Home() {
         <div className="container">
           <div className="section-head">
             <div>
-              <div className="section-kicker">Services Preview</div>
-              <div className="section-title">Designed to look great and perform fast</div>
+              <div className="section-kicker">ERP Services</div>
+              <div className="section-title">Modular solutions for real-world operations</div>
             </div>
             <div className="section-lead">
-              From landing pages to full product dashboards—we build with maintainability in mind.
+              Manufacturing, CRM, inventory, and more—implemented with a consistent, scalable foundation.
             </div>
           </div>
 
           <div style={{ marginTop: 18 }} className="grid-3">
-            {servicesPreview.map((s, idx) => (
-              <div key={s.title} className="reveal" style={{ animationDelay: `${idx * 120 + 80}ms` }}>
-                <Card>
+            {ERP_HOME_FEATURES.map((s, idx) => (
+              <div key={s.slug} className="reveal" style={{ animationDelay: `${idx * 120 + 80}ms` }}>
+                <Card className="erp-home-card">
                   <div style={{ color: 'rgba(168,85,247,0.95)' }}>
                     <ServiceIcon name={s.icon} />
                   </div>
                   <div style={{ marginTop: 10, fontWeight: 900, fontSize: 18 }}>{s.title}</div>
                   <div className="muted" style={{ marginTop: 8, lineHeight: 1.6, fontSize: 14 }}>
-                    {s.description}
+                    {s.summary}
                   </div>
                   <div style={{ marginTop: 14 }}>
-                    <Button to="/services" variant="secondary">
+                    <Button to={`/erp-services/${s.slug}`} variant="secondary">
                       View details
                     </Button>
                   </div>
                 </Card>
               </div>
             ))}
+          </div>
+
+          <div
+            style={{
+              marginTop: 28,
+              display: 'flex',
+              justifyContent: 'center',
+              flexWrap: 'wrap',
+              gap: 12,
+            }}
+          >
+            <Button to="/erp-services" variant="primary">
+              View All Services
+            </Button>
           </div>
         </div>
       </section>

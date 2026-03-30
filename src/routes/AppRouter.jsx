@@ -4,6 +4,8 @@ import SiteLayout from '../components/layout/SiteLayout.jsx'
 import Home from '../pages/Home.jsx'
 import About from '../pages/About.jsx'
 import Services from '../pages/Services.jsx'
+import ErpServices from '../pages/ErpServices.jsx'
+import ErpServiceDetail from '../pages/ErpServiceDetail.jsx'
 import Contact from '../pages/Contact.jsx'
 import Auth from '../pages/Auth.jsx'
 import ForgotPassword from '../pages/ForgotPassword.jsx'
@@ -18,6 +20,8 @@ export default function AppRouter() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/erp-services" element={<ErpServices />} />
+        <Route path="/erp-services/:slug" element={<ErpServiceDetail />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/auth" element={<Auth />} />
         <Route path="/login" element={<Navigate to="/auth" replace />} />

@@ -1,51 +1,10 @@
 import Card from '../components/ui/Card.jsx'
 import ServiceIcon from '../components/icons/ServiceIcon.jsx'
 import Button from '../components/ui/Button.jsx'
-
-const services = [
-  {
-    icon: 'code',
-    title: 'Web Development',
-    description: 'React UI, component systems, and clean front-end engineering.',
-  },
-  {
-    icon: 'cloud',
-    title: 'Deploy & Scale',
-    description: 'Production deployments, CI/CD workflows, and environment stability.',
-  },
-  {
-    icon: 'security',
-    title: 'Security Reviews',
-    description: 'Secure patterns, vulnerability mitigation, and threat-informed fixes.',
-  },
-  {
-    icon: 'analytics',
-    title: 'Performance Optimization',
-    description: 'Speed audits, bundle tuning, and UX responsiveness improvements.',
-  },
-  {
-    icon: 'privacy',
-    title: 'Privacy & Compliance',
-    description: 'Data-safe UI flows and best practices for handling sensitive inputs.',
-  },
-  {
-    icon: 'launch',
-    title: 'Product Launch Support',
-    description: 'Polish, QA checks, and release readiness for smooth go-lives.',
-  },
-  {
-    icon: 'code',
-    title: 'Design Systems',
-    description: 'Reusable components, consistent styling, and maintainable UI rules.',
-  },
-  {
-    icon: 'analytics',
-    title: 'UX Iteration',
-    description: 'Feedback loops, usability improvements, and measured enhancements.',
-  },
-]
+import { SERVICES_CATALOG } from '../constants/servicesCatalog.js'
 
 export default function Services() {
+  const services = SERVICES_CATALOG
   return (
     <div>
       <section className="section">
